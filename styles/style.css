@@ -100,6 +100,7 @@
 }
 
 .header {
+  block-size: 364px;
   display: grid;
   justify-items: center;
   justify-content: center;
@@ -111,70 +112,11 @@
 .header__title {
   margin-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
   margin-block-end: 20px;
+
 }
 
 .header__subtitle {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-}
-
-.header__theme-menu {
-  margin-block: 25px;
-}
-
-.theme-menu__list {
-  display: grid;
-  gap: 8px;
-  padding-inline-start: 20px;
-}
-
-.theme-menu__button {
-  position: relative;
-  border: none;
-  font-size: 14px;
-  text-transform: uppercase;
-  background: transparent;
-  transition: opacity 0.3s ease;
-  cursor: pointer;
-  appearance: none;
-}
-
-.theme-menu__button:not(:disabled)::after {
-  content: "";
-  display: block;
-  background: currentColor;
-  transition: transform 0.3s ease;
-  transform: scaleX(0);
-  transform-origin: left;
-  inline-size: 100%;
-  block-size: 2px;
-}
-
-.theme-menu__button:hover {
-  opacity: 0.6;
-}
-
-.theme-menu__button:focus {
-  outline: none;
-  opacity: 0.6;
-}
-
-.theme-menu__button:focus-visible::after {
-  transform: scaleX(1);
-}
-
-.theme-menu__button:disabled {
-  opacity: 0.6;
-  cursor: default;
-  pointer-events: none;
-}
-
-.theme-menu__button:disabled::before {
-  content: "▶";
-  position: absolute;
-  animation: arrow 0.5s ease-in-out infinite alternate;
-  inset-inline-start: -20px;
-  /* Safari fix */
-  inset-block-start: 0px;
 }
 
 .main {
@@ -331,8 +273,8 @@
 }
 
 .button__icon {
-  block-size: 22px;
-  inline-size: 22px;
+  block-size: 30px;
+  inline-size: 30px;
 }
 
 .like-icon {
@@ -340,8 +282,8 @@
   inline-size: 39px;
 }
 
-/* 376 взято так как в фигме на 375 уже стоят определенные стили, а при использовании width <= 375px 375 все еще включает в себя стили для значений больше 375 ???? */
-@media (width < 376px) {
+
+@media (width < 375px) {
   .modal {
     padding: 28px 34px 28px 40px;
     max-inline-size: 340px;
