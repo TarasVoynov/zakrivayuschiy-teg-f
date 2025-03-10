@@ -100,7 +100,7 @@
 }
 
 .header {
-  block-size: 364px;
+  min-block-size: 364px;
   display: grid;
   justify-items: center;
   justify-content: center;
