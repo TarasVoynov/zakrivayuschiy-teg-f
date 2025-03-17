@@ -53,6 +53,7 @@
 }
 
 .page__header {
+  margin-block-start: 20px;
   margin-block-end: 100px;
 }
 
@@ -101,7 +102,6 @@
 }
 
 .header {
-  min-block-size: 364px;
   display: grid;
   justify-items: center;
   justify-content: center;
@@ -214,6 +214,13 @@
   border-color: var(--text-color, #000000);
 }
 
+.card__like-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 118px;
+  block-size: 31px;
+}
 .button {
   position: relative;
   z-index: 1;
@@ -284,7 +291,7 @@
     padding: 28px 34px 28px 40px;
     max-inline-size: 340px;
   }
-
+  
   .button--save {
     flex-direction: column;
   }
