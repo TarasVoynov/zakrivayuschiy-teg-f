@@ -53,6 +53,7 @@
 }
 
 .page__header {
+  block-size: 364px;
   margin-block-end: 100px;
 }
 
@@ -84,6 +85,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  font-size: 14px;
 }
 
 .modal__icon {
@@ -103,11 +105,13 @@
 .header {
   display: grid;
   justify-items: center;
+  align-content: center;
   justify-content: center;
   font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
   line-height: normal;
   text-transform: uppercase;
   padding-block: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
+  align-items: center;
 }
 
 .header__title {
@@ -136,6 +140,7 @@
   border: 2px solid var(--text-color, #000000);
   background: var(--page-background-color, #ffffff);
   max-inline-size: 696px;
+
 }
 
 .card__header {
@@ -217,8 +222,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  inline-size: 118px;
-  block-size: 31px;
+  inline-size: 130px;
+  block-size: 38px;
 }
 .button {
   position: relative;
