@@ -53,7 +53,6 @@
 }
 
 .page__header {
-  margin-block-start: 20px;
   margin-block-end: 100px;
 }
 
@@ -166,7 +165,7 @@
   line-height: normal;
   text-transform: uppercase;
   text-shadow: 0 0 1px var(--page-background-color, #ffffff);
-  inset-inline-end: 25px;
+  inset-inline-end: min(3%, 25px);
   inset-block-start: 25px;
   mix-blend-mode: hard-light;
 }
