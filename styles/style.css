@@ -53,7 +53,6 @@
 }
 
 .page__header {
-  block-size: 364px;
   margin-block-end: 100px;
 }
 
@@ -110,7 +109,7 @@
   font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
   line-height: normal;
   text-transform: uppercase;
-  padding-block: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
+  padding-block: clamp(7.5rem, 7.1479rem + 1.5023vw, 7.9rem);
   align-items: center;
 }
 
